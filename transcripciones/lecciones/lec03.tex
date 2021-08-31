@@ -1,7 +1,7 @@
 Antes de proseguir quiero señalar que esto no es un compendio sobre temas de nuestra enseñanza, mi mayor anhelo es colaborar con la cultura matemática sobre todo con notas poco publicadas y que sean muy interesantes...
 
 \vspace{0.5cm}
-\noindent 1) Ya vimos que en todo triángulo puede inscribirse y circunscribirse una circunferencia. Sin embargo este privilegio no lo poseen los cuadriláteros. Para que una circunferencia pueda circunscribirse en un cuadrilátero $ABCD$ tiene que cumplirse que los ángulos opuestos sean suplementarios ($\measuredangle A + \measuredangle C = 180\degree$, $\measuredangle B + \measuredangle D = 180\degree$), este cuadrilátero es llamado Cuadrilátero Cíclico (CC).
+\noindent 1) Ya vimos que en todo triángulo puede inscribirse y circunscribirse una circunferencia. Sin embargo este privilegio no lo poseen los cuadriláteros. Para que una circunferencia pueda circunscribirse en un cuadrilátero $ABCD$ tiene que cumplirse que los ángulos opuestos sean suplementarios ($\measuredangle A + \measuredangle C = 180\degree$, $\measuredangle B + \measuredangle D = 180\degree$), este cuadrilátero es llamado Cuadrilátero Cíclico ($CC$).
 
 \hspace{2cm} y para que pueda ser inscrito tiene que cumplir que $\overline{AB}+\overline{CD} = \overline{BC}+\overline{DA}$ (Teorema de Pitot).
 
@@ -39,7 +39,7 @@ Conocer esto es muy ventajoso, pues veamos...
 }
 \parbox[][][t]{.03\linewidth}{\hspace{.03\linewidth}}
 \parbox[][][t]{.67\linewidth}{
- Sea $ABCD$ un CC tal que sus diagonales se cortan en $P \Longrightarrow$
+ Sea $ABCD$ un $CC$ tal que sus diagonales se cortan en $P \Longrightarrow$
  \begin{itemize}
      \item[i $\cdot\hspace{0.05cm}\text{-}$] $\measuredangle ABD = \measuredangle ACD$, $\measuredangle DBC = \measuredangle DAC$, etc
      \item[ii $\cdot\hspace{0.05cm}\text{-}$] $\measuredangle DAB = \measuredangle DCE$ (siendo $B$, $C$ y $E$ alineados)
@@ -117,7 +117,7 @@ forma 3)
 
 \vspace{0.3cm}
 
-\noindent 3) Eje radical de dos circunferencias (ER)
+\noindent 3) Eje radical de dos circunferencias ($ER$)
 
 Veamos las formas de presentarse
 
@@ -238,15 +238,17 @@ Secantes
       
       \coordinate [label=below right:$P$] (PP) at (-1.68,3);
       \coordinate [label=below:$Q$] (QQ) at (-3.95,1.79);
-      \coordinate [label=below:$R$] (RR) at (0.89,3.09);
+      \coordinate [label=below:$T$] (TT) at (0.89,3.09);
       
       \filldraw (O1) circle[radius=1.5pt];
       \filldraw (O2) circle[radius=1.5pt];
+      \filldraw (QQ) circle[radius=1.5pt];
+      \filldraw (TT) circle[radius=1.5pt];
       
       \draw[dashed] (O1) -- (O2);
       \draw (E) -- (R);
       \draw (QQ) -- (PP);
-      \draw (PP) -- (RR);
+      \draw (PP) -- (TT);
       
       \tkzMarkRightAngle(O1,P,E);
       
@@ -254,3 +256,63 @@ Secantes
       \tkzDrawArc[angles,color=black](O2,A)(70,-60)
     \end{tikzpicture}
 }
+
+\vspace{0.5cm}
+
+En cada forma vemos que $ER \perp O_1O_2$, pero lo más destacado es que: Todo punto situado en el $ER$ tiene la misma potencia respecto a ambas circunferencias. Vea como ejemplo en la forma 4 $\overline{PQ}^2 = \overline{PB}\cdot\overline{PA}=\overline{PT}^2$, siendo $\overline{PQ}$ y $\overline{PT}$ tangentes. 
+
+\vspace{0.5cm}
+
+\noindent 4) Centro radical de 3 circunferencias ($CR$).
+
+
+\vspace{0.5cm}
+
+\noindent\parbox[][][t]{.45\linewidth}{
+    \begin{tikzpicture}
+    \coordinate [label=left:$O_1$] (O1) at (-4, 1);
+    \coordinate [label=right:$O_2$] (O2) at (0.48, 4.36);
+    \coordinate [label=below:$O_3$] (O3) at (-0.32, -0.52);
+    
+    \coordinate [label=below:] (R1) at (-2.72, 1.9);
+    \coordinate [label=below:] (R2) at (-1.72, 2.34);
+    \coordinate [label=below:] (R3) at (-1.54, 0.74);
+    
+    \coordinate [label=above right:$CR$] (CR) at (-1.68, 1.61);
+    
+    \coordinate [label=above:$ER$] (ER11) at (-3.48,4.01);
+    \coordinate [label=below:] (ER12) at (-0.96, 0.65);
+    
+    \coordinate [label=below:$ER$] (ER21) at (-2.76,-1.01);
+    \coordinate [label=below:] (ER22) at (-1.34, 2.44);
+    
+    \coordinate [label=below:$ER$] (ER31) at (2.3,0.96);
+    \coordinate [label=below:] (ER32) at (-2.41, 1.73);
+    
+    \filldraw (CR) circle[radius=1.5pt];
+    
+    \draw[dashed] (O1) -- (O2) -- (O3) -- (O1);
+    \draw (ER11) -- (ER12);
+    \draw (ER21) -- (ER22);
+    \draw (ER31) -- (ER32);
+      
+    \tkzDrawCircle(O1,R1);
+    \tkzDrawArc[angles,color=black](O2,R2)(150,300)
+    \tkzDrawArc[angles,color=black](O3,R3)(-5,200)
+    \end{tikzpicture}
+}
+\parbox[][][t]{.1\linewidth}{\hspace{.1\linewidth}}
+\noindent\parbox[][][t]{.45\linewidth}{
+\vfill
+\begin{center}
+Es el punto\\
+donde concurren\\
+los tres $ER$
+\end{center}
+\vfill
+}
+
+
+\vspace{0.8cm}
+
+\noindent 5) Teorema de Ptolomeo
