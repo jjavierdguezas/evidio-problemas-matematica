@@ -114,3 +114,143 @@ forma 3)
  $\overline{CE}\cdot\overline{DC} = \overline{CA}\cdot\overline{BC}$\\
  Vea que  $\triangle ACD \sim \triangle BCE$
 }
+
+\vspace{0.3cm}
+
+\noindent 3) Eje radical de dos circunferencias (ER)
+
+Veamos las formas de presentarse
+
+\vspace{0.5cm}
+
+\noindent\parbox[][][t]{.45\linewidth}{
+forma 1
+
+\begin{center}
+Circunferencias Tangentes\\
+Externas    
+\end{center}
+
+\vspace{0.5cm}
+
+    \begin{tikzpicture}
+      \coordinate [label=below:$O_1$] (O1) at (-2.5, 0);
+      \coordinate [label=below:$O_2$] (O2) at (2, 0);
+      \coordinate [label=below:] (P) at (-1,0);
+      \coordinate [label=below right:] (E) at (-1,2.5);
+      \coordinate [label=below:$ER$] (R) at (-1,-3);
+      
+      \filldraw (O1) circle[radius=1.5pt];
+      \filldraw (O2) circle[radius=1.5pt];
+      
+      \draw[dashed] (O1) -- (O2);
+      \draw (E) -- (R);
+      
+      \tkzMarkRightAngle(O1,P,E);
+      
+      \tkzDrawArc[angles,color=black](O1,P)(-90,150)
+      \tkzDrawArc[angles,color=black](O2,P)(100,-80)
+    \end{tikzpicture}
+}
+\parbox[][][t]{.1\linewidth}{\hspace{.1\linewidth}}
+\noindent\parbox[][][t]{.45\linewidth}{
+forma 2
+
+\begin{center}
+Circunferencias\\
+Exteriores    
+\end{center}
+
+\vspace{0.5cm}
+
+    \begin{tikzpicture}
+      \coordinate [label=below:$O_1$] (O1) at (-2.5, 0);
+      \coordinate [label=below:$O_2$] (O2) at (2, 0);
+      \coordinate [label=below:] (P) at (-1,0);
+      \coordinate [label=below:] (P1) at (-1.5,0);
+      \coordinate [label=below:] (P2) at (-0.8,0);
+      \coordinate [label=below right:] (E) at (-1,2.5);
+      \coordinate [label=below:$ER$] (R) at (-1,-3);
+      
+      \filldraw (O1) circle[radius=1.5pt];
+      \filldraw (O2) circle[radius=1.5pt];
+      
+      \draw[dashed] (O1) -- (O2);
+      \draw (E) -- (R);
+      
+      \tkzMarkRightAngle(O1,P,E);
+      
+      \tkzDrawArc[angles,color=black](O1,P1)(-140,150)
+      \tkzDrawArc[angles,color=black](O2,P2)(70,-60)
+    \end{tikzpicture}
+}
+
+\vspace{0.5cm}
+
+\noindent\parbox[][][t]{.45\linewidth}{
+forma 3
+
+\begin{center}
+Circunferencias Tangentes\\
+Interiores    
+\end{center}
+
+\vspace{0.5cm}
+
+    \begin{tikzpicture}
+      \coordinate [label=below:$O_1$] (O1) at (0.1, 0);
+      \coordinate [label=below:$O_2$] (O2) at (1.5, 0);
+      \coordinate [label=below:] (P) at (-1.5,0);
+      \coordinate [label=below right:] (E) at (-1.5,3);
+      \coordinate [label=below:$ER$] (R) at (-1.5,-3);
+      
+      \filldraw (O1) circle[radius=1.5pt];
+      \filldraw (O2) circle[radius=1.5pt];
+      
+      \draw[dashed] (O2) -- (P);
+      \draw (E) -- (R);
+      
+      \tkzMarkRightAngle(O1,P,E);
+      
+      \tkzDrawCircle(O1,P);
+      \tkzDrawCircle(O2,P);
+    \end{tikzpicture}
+}
+\parbox[][][t]{.1\linewidth}{\hspace{.1\linewidth}}
+\noindent\parbox[][][t]{.45\linewidth}{
+forma 4
+
+\begin{center}
+Circunferencias\\
+Secantes    
+\end{center}
+
+\vspace{0.5cm}
+
+    \begin{tikzpicture}
+      \coordinate [label=below:$O_1$] (O1) at (-3, 0);
+      \coordinate [label=below:$O_2$] (O2) at (1, 0);
+      \coordinate [label=below:] (P) at (-1.68,0);
+      \coordinate [label=right:$A$] (A) at (-1.68,1.54);
+      \coordinate [label=right:$B$] (B) at (-1.68,-1.54);
+      \coordinate [label=below right:] (E) at (-1.68,3.5);
+      \coordinate [label=below:$ER$] (R) at (-1.68,-3);
+      
+      \coordinate [label=below right:$P$] (PP) at (-1.68,3);
+      \coordinate [label=below:$Q$] (QQ) at (-3.95,1.79);
+      \coordinate [label=below:$R$] (RR) at (0.89,3.09);
+      
+      \filldraw (O1) circle[radius=1.5pt];
+      \filldraw (O2) circle[radius=1.5pt];
+      
+      \draw[dashed] (O1) -- (O2);
+      \draw (E) -- (R);
+      \draw (QQ) -- (PP);
+      \draw (PP) -- (RR);
+      
+      \tkzMarkRightAngle(O1,P,E);
+      
+      \tkzDrawArc[angles,color=black](O1,A)(-140,150)
+      \tkzDrawArc[angles,color=black](O2,A)(70,-60)
+    \end{tikzpicture}
+}
