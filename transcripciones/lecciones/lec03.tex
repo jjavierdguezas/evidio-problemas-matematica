@@ -313,6 +313,69 @@ los tres $ER$
 }
 
 
-\vspace{0.8cm}
+\newpage
 
 \noindent 5) Teorema de Ptolomeo
+
+Como vimos en 1.iv, en todo $CC$ el producto de las diagonales es igual a la suma del producto de los lados opuestos.
+
+\vspace{0.5cm}
+\noindent\parbox[][][t]{.3\linewidth}{
+    \begin{tikzpicture}[scale=1.2]
+      \coordinate [label=above:$A$] (A) at (-0.8,1.83);
+      \coordinate [label=right:$B$] (B) at (1.2,1.02);
+      \coordinate [label=right:$C$] (C) at (1.37,-0.31);
+      \coordinate [label=left:$D$] (D) at (-1.91,-0.58);
+      \coordinate [label=left:$Q$] (Q) at (0.16,0.48);
+      
+      \coordinate [label=above:$P$] (P) at (0.43,0.62);
+      \coordinate (O) at (-0.32,0.15);
+      
+      \draw (A) -- (B) -- (C) -- (D) -- (A);
+      \draw (A) -- (C);
+      \draw (D) -- (B);
+      \draw[dashed] (C) -- (Q);
+      
+    %   \filldraw (Q) circle[radius=1.5pt];
+      
+      \tkzLabelAngle[pos=0.3](D,A,C){$x$}; 
+      \tkzLabelAngle[pos=0.3](D,B,C){$x$}; 
+      \tkzLabelAngle[pos=0.5](C,A,B){$*$}; 
+      \tkzLabelAngle[pos=0.5](C,D,B){$*$}; 
+      \tkzMarkAngle[size=0.5cm,arc=l,mark=none](Q,C,D);
+      \tkzMarkAngle[size=0.5cm,arc=l,mark=none](B,C,P);
+      
+      \tkzDrawCircle(O,A);
+    \end{tikzpicture}
+}
+\parbox[][][t]{.03\linewidth}{\hspace{.03\linewidth}}
+\parbox[][][t]{.67\linewidth}{
+ $\overline{DB}\cdot\overline{CA} = \overline{AB}\cdot\overline{CD} + \overline{BC}\cdot\overline{DA}$, demostración
+ 
+ \vspace{0.4cm}
+ 
+ Sean $Q \in \overline{DP}$; $\measuredangle{DCQ} = \measuredangle{PCB}$, tenemos:
+ \begin{equation*}
+     \begin{aligned}
+      \triangle DCQ \sim \triangle ABC &\Rightarrow \dfrac{\overline{DQ}}{\overline{AB}} = \dfrac{\overline{CQ}}{\overline{BC}} = \dfrac{\overline{DC}}{\overline{AC}} &\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {1}}}\\
+      \triangle DAC \sim \triangle BCQ &\Rightarrow \dfrac{\overline{DA}}{\overline{QB}} = \dfrac{\overline{DC}}{\overline{QC}} = \dfrac{\overline{AC}}{\overline{BC}} &\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {2}}}
+     \end{aligned}
+ \end{equation*}
+ \begin{equation*}
+ \left.\begin{aligned}
+     \text{de}~\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {1}}}~~\overline{AB}\cdot \overline{CD}&= \overline{DQ} \cdot \overline{AC} \\  
+     \text{de}~\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {2}}}~~\overline{BC}\cdot \overline{DA}&= \overline{QB} \cdot \overline{AC} \\
+       \end{aligned}
+ ~~\right\}~~{\text{sumando obtenemos} \atop \text{lo deseado}}
+\end{equation*}
+}
+
+
+\vspace{0.5cm}
+
+\noindent nota: Una pincelada muy bonita relacionada con esto se presenta de la siguiente forma: Si $\triangle ABC$ equilátero está inscrito en una circunferencia y $D \in \overset{\Huge\frown}{AC} \Longrightarrow \overline{AD}+\overline{DC} = \overline{BD}$ (Teorema de Pompello)
+
+
+\vspace{1cm}
+
+6, 7, 8 ... pueden ser sugerencias de nuestros amigos.
