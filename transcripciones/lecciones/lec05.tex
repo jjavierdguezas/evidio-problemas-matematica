@@ -41,19 +41,53 @@ $\Longrightarrow \texttt{mcd}(A,B,C)=2^2\cdot5=20$ (Vea que se toman solo las ba
 \vspace{0.5cm}
 
 $6\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Reglas de divisibilidad: Un \# es divisible por ...
+\begin{itemize}
+    \addtolength{\itemindent}{1cm}
+    \item[$2 -$] si su última cifra es par o es $= 0$
+    \item[$5 -$] si su última cifra es $0$ o $5$
+    \item[$10 -$] si su última cifra es $= 0$
+    \item[$3 -$] si al sumar todas sus cifras se obtiene un múltiplo de $3$
+    \item[$9 -$] si al sumar todas sus cifras se obtiene un múltiplo de $9$
+    \item[$4 -$] si las dos últimas cifras del \# conforman un múltiplo de $4$
+    \item[$8 -$] si las tres últimas cifras del \# conforman un múltiplo de $8$
+    \item[$11 -$] cuando al restar los dos resultados de sumar las cifras de orden par y las de orden impar, se obtiene un múltiplo de 11, veamos... \vspace{-0.3cm}
+    \item[] $\overline{abcde}$\hspace{.65cm}$S_1=b+d$\hspace{.65cm}$S_2=a+c+d$\hspace{.65cm}$|S_1 - S_2| = 11k$
+    \item[$6 -$] cuando es divisible por $2$ y $3$ a la misma vez
+    \item[$12 -$] cuando es divisible por $3$ y $4$ a la misma vez
+    \item[$15 -$] cuando es divisible por $3$ y $5$ a la misma vez
+    \item[$36 -$] cuando es divisible por $4$ y $9$ a la misma vez
+    \item[] Vea que $2$ y $3$, $3$ y $4$, $3$ y $5$, $4$ y $9$ son \# primos entre sí\vspace{-0.3cm}
+    \item[] Ejemplo: $1536$ es divisible por: $1,2,3,4,6,8,12,...,1536$ \vspace{-0.3cm}
+    \item[]\hspace{2.5cm}no es divisible por: $5,10,9,11,36,...$
+    \item[$7 -$] cuando separamos su última cifra y multiplicándola por $2$, dicho resultado se le resta al \# que resultó de suprimir la última cifra al \# original, obteniendo un múltiplo de $7$\vspace{-0.3cm}
+    \item[] Ejemplo: $51492$ : $2\cdot2=4$, $5149-4=5145$, $5\cdot2=10$, $514-10=504$, $4\cdot2=8$\vspace{-0.3cm}
+    \item[] $50-8=42$ $\Longrightarrow 51492$ es múltiplo de $7$
+\end{itemize}
 
-\hspace{.65cm}$2 -$ si su última cifra es par o es $= 0$
+Ahora existe una regla general que nos permite obtener la regla de divisibilidad de cualquier \# primo. En cualquier caso debemos separar la última cifra del \# y multiplicarlo por un \#n $n$ y luego realizar el mismo algoritmo que la regla del $7$. El problema es ver quién es $n$.
 
-\hspace{.65cm}$5 -$ si su última cifra es $0$ o $5$
+Debemos buscar qué dígitos multiplicados por el \# al cual le estamos investigando la regla de divisibilidad , da como resultado un \# cuya última cifra es $= 1$. Del resultado de este producto nos interesa solo las cifras que queden a la izquierda del $1$, y este será el valor de $n$.
 
-\hspace{.65cm}$10 -$ si su última cifra es $= 0$
+Ejemplo Regla del $97$: $97\cdot3=291 \Longrightarrow n=29$
+% \vspace{-0.3cm}
 
-\hspace{.65cm}$3 -$ si al sumar todas sus cifras se obtiene un múltiplo de $3$
+\hspace{1cm}Sea $12804$: $4\cdot29=116$, $1280-116=1164$, $4\cdot29=116$, $116-116=0$
 
-\hspace{.65cm}$9 -$ si al sumar todas sus cifras se obtiene un múltiplo de $9$
-
-\hspace{.65cm}$4 -$ si las dos últimas cifras del \# conforman un múltiplo de $4$
-
-\hspace{.65cm}$8 -$ si las tres últimas cifras del \# conforman un múltiplo de $8$
+$\Longrightarrow 12804$ es divisible por $97$
+\begin{center}
+    \texttt{$-\cdot-\cdot-$}
+\end{center}
+$7\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Divisibilidad: El número natural $n$ es un divisor del número natural $m$ si existe $x \in \mathbb{N}$ tal que $m = nx$ y se escribe $n \mid m$ o $m$ $\vdots$ $n$. Se lee $n$ divide a $m$ o $m$ es múltiplo de $n$
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{1cm}
+    \item Para todo $n \in \mathbb{Z}_+$ ; $1 \mid n$ y $n \mid n$
+    \item Si $a \mid b$ y $a \mid c \Longrightarrow a \mid b \pm c$
+    \item Si $a \mid b \Longrightarrow a \mid bc$ ; $\forall c \in \mathbb{Z}$
+    \item Si $a \mid b$ y $b \mid c \Longrightarrow a \mid c$
+    \item Si $a \mid b$ y $a \mid c \Longrightarrow a \mid (bx + cy)$ $\forall x,y \in \mathbb{Z}$ 
+    \item Si $a \mid b$ y $b \mid a \Longrightarrow a = \pm b$ 
+    \item Si $a \mid b$, $a > 0$ , $b > 0 \Longrightarrow b \ge a$
+\end{itemize}
 
 \vspace{0.5cm}
