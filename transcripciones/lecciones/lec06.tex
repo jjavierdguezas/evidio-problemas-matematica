@@ -1,0 +1,149 @@
+El álgebra es una de las disciplinas insigneas dentro del estudio de las matemáticas. En estas notas tenemos en cuenta el trabajo con polinomios, ecuaciones, desigualdades y funciones entre tantas líneas que contempla este tema.
+
+\vspace{0.5cm}
+
+$1\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Productos Notables:
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{0.5cm}
+    \item[] A los más conocidos incorporamos estos de gran aplicación
+    \item $(a \pm b)^3 = a^3 \pm 3a^2b + 3ab^ \pm b^3$
+    \item $(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$
+    \item $(a+b+c)^3 = a^3 + b^3 + c^3 + 3a^2b + 3a^2c + 3ab^2 + 3b^2c + 3ac^2 + 3bc^2 + 6abc$
+    \item $(a+b)(b+c)(c+a) = a^2b +a^2c + ab^2 + b^2c + ac^2 + bc^2 + 2abc$
+\end{itemize}
+
+\vspace{0.5cm}
+
+$2\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Factorización: Al factor común, diferencia de cuadrados y trinomio agregamos otras formas...
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{0.5cm}
+    \item Factor común por agrupamiento, ejemplo: \vspace{-0.3cm}
+    \item[] $ab + ac + mb + mc = a(b+c) + m(b+c) = (b+c)(a+b)$
+    \item Suma y Diferencia de Cubos \vspace{-0.3cm}
+    \item[] $a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)$
+    \item Otras sumas \vspace{-0.3cm}
+    \item[] ejemplo 1) $a^2b + a^2c + ab^2 + b^2c + ac^2 + bc^2 + 2abc$ \vspace{-0.3cm}
+    \item[] $= a^2b + ab^2 + a^2c + abc + abc + b^2c + ac^2 + bc^2$ \vspace{-0.3cm}
+    \item[] $= ab(a+b) + ac(a+b) + bc(a+b) + c^2(a+b)$ \vspace{-0.3cm}
+    \item[] $= (a+b)(ab + ac + bc + c^2)$ \vspace{-0.3cm}
+    \item[] $= (a+b)[a(b+c) + c(b+c)]$ \vspace{-0.3cm}
+    \item[] $= (a+b)(b+c)(a+c)$
+    \item[] ejemplo 2) $a^3 + b^3 + c^3 - 3abc$ \vspace{-0.3cm}
+    \item[] $= (a+b+c)(a^2+b^2+c^2-ab -bc- ca)$ ¿por qué?
+    \item[] ejemplo 3) $a^4+4$ \vspace{-0.3cm}
+    \item[] $= a^4 + 4a^2 + 4 - 4a^2$ \vspace{-0.3cm}
+    \item[] $= (a^2 +2)^2 - 4a^2$ \vspace{-0.3cm}
+    \item[] $= (a^2 + 2a + 2)(a^2 - 2a +2)$ \vspace{-0.3cm}
+\end{itemize}
+
+\vspace{0.5cm}
+
+$3\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Polinomios
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{0.5cm}
+    \item Teorema del resto: Al dividir un polinomio de grado $n$ por un binomio de la forma $(x-a) \Longrightarrow P(x) = (x-a)Q(x) + R$, donde $R$ es un \# real \vspace{-0.3cm}
+    \item[] Si $R = 0 \Longrightarrow x-a \mid P(x)$ y ``$a$'' es un divisor del término independiente de $P(x)$
+    \item Teorema de Bezout: El resto $R$ en la nota anterior es igual al valor de $P(x)$ para $x=a$, o sea $R = P(a)$. Ver regla de Ruffini
+    \item $P(x)= x^n-a^n$ siempre es divisible por $(x-a)$, $n \in \mathbb{N}$
+    \item $P(x)= x^n-a^n$ es divisible por $(x+a)$, si $n$ es par
+    \item $P(x)= x^n+a^n$ es divisible por $(x+a)$, si $n$ es impar
+    \item Un \# $x_0$ es la raíz de $P(x) \Longleftrightarrow x - x_0 \mid P(x)$
+    \item Teorema de Vieta \vspace{-0.3cm}
+    \item[] Sea $P(x) = x^n+a_1x^{n-1}+a_2x^{n-2}+ ... + a_{n-1}x + a_n$ \vspace{-0.3cm}
+    \item[] con raíces $x_1, x_2,..., x_n$ cumple con: \vspace{-0.3cm}
+    \item[] $x_1+x_2+...+x_{n-1}+x_n = -a_1$ \vspace{-0.3cm}
+    \item[] $x_1x_2 + x_2x_3 + ... + x_{n-1}x_n = a_2$\vspace{-0.3cm}
+    \item[] $x_1x_2x_3 + x_1x_2x_4 + ... + x_{n-2}x_{n-1}x_n = -a_3$\vspace{-0.3cm}
+    \item[] $\cdot$ \vspace{-0.5cm}
+    \item[] $\cdot$ \vspace{-0.5cm}
+    \item[] $\cdot$ \vspace{-0.5cm}
+    \item[] $x_1x_2x_3 \cdot\cdot\cdot x_n = -a_n$ (si $n$ es impar) \vspace{-0.3cm}
+    \item[] \hspace{2.35cm}$= a_n$\hspace{0.45cm}(si $n$ es par)
+    \item[] En particular $P(x) = x^2+px +q = (x - x_1)(x - x_2)$ \vspace{-0.3cm}
+    \item[] \hspace{2.5cm} $x_1+x_2 = -p$ y $x_1x_2=q$ 
+    \item[] y en $ax^2 + bx +c =0$ la ecuación tiene $2$ raíces reales si $D>0$ \vspace{-0.3cm}
+    \item[] \hspace{5.65cm} no tiene raíces reales si $D<0$\vspace{-0.3cm}
+    \item[] \hspace{5.65cm} tiene una sola raíz si $D=0$\vspace{-0.3cm}
+    \item[] $D=b^2-4ac$ y $x_{1,2}=\dfrac{-b \pm \sqrt{D}}{2a}$
+\end{itemize}
+
+\vspace{0.5cm}
+
+$3\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Desigualdades. Si $a,b,c \in \mathbb{R}$
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{0.5cm}
+    \item Si $a<b \Longrightarrow a \pm c < b\pm c$
+    \item Si $0 < a < b \Longrightarrow a^n < b^n$
+    \item $a < b < 0 \Longrightarrow a^n < b^n \Longleftrightarrow n$ es impar
+    \item si $a < b$ y $c > 0 \Longrightarrow ac < bc$
+    \item si $a < b$ y $c < 0 \Longrightarrow ac > bc$
+    \item $a^2 \ge 0$
+    \item Si $a,b$ tienen suma constante $\Longrightarrow ab$ es máximo si $a=b$ 
+\end{itemize}
+\begin{center}
+    \texttt{$-\cdot-\cdot-$}
+\end{center}
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{0.5cm}
+    \item $\mid x \mid$ $\ge 0$ con $=$ $\Longleftrightarrow x = 0$
+    \item $\mid x \mid$ $\ge x$ con $=$ $\Longleftrightarrow x \ge 0$
+    \item $\mid x \mid$ $=$ $\mid -x \mid$
+    \item $\mid xy \mid$ $=$ $\mid x \mid\mid y \mid$
+    \item $\mid x \mid$ $\le a \Longleftrightarrow -a \le x \le a$
+    \item $\mid x \mid$ $\ge a \Longleftrightarrow x \ge a$ o $x \le -a$
+    \item $\mid x^2 \mid$ $=$ $\mid x \mid^2$ $=$ $x^2$
+    \item $\mid a+b \mid$ $\le$ $\mid a \mid$ $+$ $\mid b \mid$ con $=$ $ \Longleftrightarrow ab = 0$
+    \item $\mid a-b \mid$ $\ge$ $\mid a \mid$ $-$ $\mid b \mid$ con $=$ $ \Longleftrightarrow ab = 0$
+\end{itemize}
+
+\vspace{0.5cm}
+
+$4\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Desigualdades Notables
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{0.5cm}
+    \item Relación entre las medias: $R \ge A \ge g \ge H$, o sea,
+    \item[] $\sqrt{\dfrac{a_{1}^2 + a_{1}^2 + ... a_{n}^2}{n}}$\hspace{1.1cm}$\ge$\hspace{0.7cm}$\sum\limits_{i=1}^{n}\dfrac{a_i}{n}$\hspace{0.7cm}$\ge$\hspace{0.4cm}$\sqrt[\leftroot{-2}\uproot{2}n]{\prod\limits_{i=1}^{n}a_i}$\hspace{0.7cm}$\ge$\hspace{0.6cm}$\dfrac{n}{\sum\limits_{i=i}^{n}\dfrac{1}{a_i}}$
+    \item[] Raíz cuadrada de la \hspace{0.4cm} $\ge$ \hspace{0.4cm} Media \hspace{0.4cm} $\ge$ \hspace{0.4cm} Media  \hspace{0.4cm} $\ge$ \hspace{0.4cm} Media \vspace{-0.3cm}
+    \item[]\hspace{0.2cm} media aritmética \hspace{1.35cm} aritmética \hspace{0.6cm} geométrica \hspace{.7cm} armónica \vspace{-0.3cm}
+    \item[] \hspace{1cm} de los $a_i$
+    \item[] siendo $a_1, a_2 ... a_n > 0$ \vspace{-0.3cm}
+    \item[] Con $=$ $\Longleftrightarrow a_1 = a_2 = ... = a_n$
+    \item[] En particular \vspace{-0.3cm}
+    \item[] para $a,b,c > 0$: $\sqrt{\dfrac{a^2 + b^2 + c^2}{3}} \ge \dfrac{a+b+c}{3} \ge \sqrt[\leftroot{1}\uproot{2}3]{abc} \ge \dfrac{3}{\dfrac{1}{a}+\dfrac{1}{b}+\dfrac{1}{c}}$
+    
+    \item Cauchy Schwartz \vspace{-0.3cm}
+    \item[] $(a_1^2+a_2^2+...+a_n^2)(b_1^2+b_2^2+...+b_n^2)\ge (a_1b_1+a_2b_2+...+a_nb_n)^2$ \vspace{-0.2cm}
+    \item[] siendo $a_1,a_2,...,a_n,b_1,b_2...,b_n \in \mathbb{R}$ \vspace{-0.2cm}
+    \item[] Con $=$ $\Longleftrightarrow \dfrac{a_1}{b_1}=\dfrac{a_2}{b_2}=...=\dfrac{a_n}{b_n}$ \vspace{-0.2cm}
+    \item[] Además se cumple: $\dfrac{a_1^2}{x_1}+\dfrac{a_2^2}{x_2}+...+\dfrac{a_n^2}{x_n} \ge \dfrac{(a_1+a_2+...+a_n)^2}{x_1+x_2+...+x_n}$ \vspace{-0.2cm}
+    \item[] siendo $a_1,a_2,...a_n \in \mathbb{R}$ y $x_1,x_2,...,x_n \ge 0$ \vspace{-0.2cm}
+    \item[] Esta forma es muy ``atractiva'' y se conoce como Desigualdad de Arthur Engels
+    
+    \item Reacomodo \vspace{-0.2cm}
+    \item[] $\sum\limits_{i=1}^{n}{a_ib_i} \ge \sum\limits_{i=1}^{n}{a_ib_{\gamma_i}} \ge \sum\limits_{i=1}^{n}{a_ib_{n+1-i}}$ \vspace{-0.1cm}
+    \item[] con $a_i \ge a_2 \ge ... \ge a_n$, $a_i \in \mathbb{R}$ \vspace{-0.1cm}
+    \item[]    $b_i \ge b_2 \ge ... \ge b_n$, $b_i \in \mathbb{R}$ \vspace{-0.1cm}
+    \item[] $\gamma = \{1,2,...n\}$ cualquier permutaciín de $a_i$,$b_i$
+    
+    \item Shebychev \vspace{-0.2cm}
+      \begin{itemize}
+        \addtolength{\itemindent}{0.5cm}
+        \item[$\cdot\text{-}$] Si $a_1 \ge a_2 \ge ... \ge a_n$ y $b_1 \ge b_2 \ge ... \ge b_n$ $\in \mathbb{R}$
+        \item[] \hspace{0.3cm} $\Longrightarrow \sum\limits_{i=1}^{n}{a_i} \sum\limits_{i=1}^{n}{b_i} \le n \sum\limits_{i=1}^{n}{a_ib_i}$
+        \item[$\cdot\text{-}$] Si $a_1 \ge a_2 \ge ... \ge a_n$ y $b_1 \le b_2 \le ... \le b_n$ $\in \mathbb{R}$
+        \item[] \hspace{0.3cm} $\Longrightarrow \sum\limits_{i=1}^{n}{a_i} \sum\limits_{i=1}^{n}{b_i} \ge n \sum\limits_{i=1}^{n}{a_ib_i}$
+        \item[] Con $=$ si uno de los $a_i$ o $b_i$ es constante
+    \end{itemize}
+    
+    \item[*] Estas 2 desigualdades son también muy ``atractivas'', es posible que vistas así no se entiendan bien, pero en la Lección \#7 las veremos. Igualmente existen otras desigualdades notables que en otro momento notificaremos. Por ahora estas que mostramos resultan una herramienta poderosa para resolver problemas de desigualdades.
+    
+    \item[] Continuamos próximamente.
+\end{itemize}
+
+\vspace{0.5cm}
