@@ -88,6 +88,60 @@ $7\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Divisibilidad: El número natur
     \item Si $a \mid b$ y $a \mid c \Longrightarrow a \mid (bx + cy)$ $\forall x,y \in \mathbb{Z}$ 
     \item Si $a \mid b$ y $b \mid a \Longrightarrow a = \pm b$ 
     \item Si $a \mid b$, $a > 0$ , $b > 0 \Longrightarrow b \ge a$
+    \item Dado un polinomio $P=p^{\alpha_1} \cdot p^{\alpha_2} \cdot p^{\alpha_3} \cdot\cdot\cdot\cdot p^{\alpha_n}$ decimos que la cantidad de divisores $D$ de $P$ es $D=(\alpha_1 + 1)(\alpha_2 + 1)(\alpha_3 + 1) \cdot\cdot\cdot\cdot (\alpha_n + 1)$
+    \item Sea $p$ primo tal que $p \mid ab \Longrightarrow p \mid a$ o $p \mid b$
+    \item Todo \# primo mayor que $3$ puede expresarse como $4n \pm 1$; $6k \pm 1$ con $n, k \in \mathbb{N}^*$
 \end{itemize}
 
 \vspace{0.5cm}
+
+$8\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ \texttt{mcd} y \texttt{mcm}. Conveniemos que $(a,b) = \texttt{mcd}(a,b)$ y $[a,b]= \texttt{mcm}(a,b)$
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{1cm}
+    \item Si $a \mid b$ y $a \mid c \Longrightarrow a \mid (b,c)$
+    \item $(ma, mb) = m(a,b)$ $\forall m \in \mathbb{Z}_+$, $a,b \in \mathbb{N}$
+    \item $(a,b)=(a \pm b, a) = (b, b \pm a)$
+    \item Si $(m,n) = d \Longrightarrow m = ad, n= bd$; $a,b \in \mathbb{Z}$, $(a,b) = 1$
+    \item $(a,b) = \dfrac{ab}{[a,b]}$ y $[a,b,c] = \dfrac{(a,b,c)\cdot abc}{(a,b)(b,c)(c,a)}$
+\end{itemize}
+
+\vspace{0.5cm}
+
+$9\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Congruencia: Sean $a,b \in \mathbb{Z}$, $m \in \mathbb{N}^* \Longrightarrow$ ``$a$'' es congruente con ``$b$'' módulo ``$m$'' ($a \equiv b$ $($mod $m)$) si $a$ y $b$ dejan el mismo resto al dividirlos por ``$m$''
+\begin{itemize}
+    \def\labelitemi{-}
+    \addtolength{\itemindent}{1cm}
+    \item $a \equiv b$ $($mod $m) \Longleftrightarrow a - b$ es divisible por $m$
+    \item Si $a,b,c,d,k \in \mathbb{N}^*$, $n \in \mathbb{N}$ y $a \equiv b$, $c \equiv d$ $($mod $m) \Longrightarrow$
+        \begin{itemize}
+            \addtolength{\itemindent}{1cm}
+            \item[$\cdot$] $a+c \equiv b+d$, $a-c \equiv b-d$, $ac \equiv bd$, $ka \equiv kb$ $($mod $m)$
+            \item[$\cdot$] $a^n \equiv b^n$ $($mod $m)$
+            \item[$\cdot$] $a:k \equiv b:k$ $($mod $m)$ si $(k,m)=1$ y $a = kc$ y $b = kd$
+        \end{itemize}
+    \item $a \equiv a$ $($mod $m)$
+    \item Si $a \equiv b$ $\Longrightarrow$ $b \equiv a$ $($mod $m)$
+    \item Si $a \equiv b$ y $b \equiv c \Longrightarrow a \equiv c$ $($mod $m)$
+    \item Si $a \equiv b$ $($mod $m) \Longrightarrow (a,m) \equiv (b,m)$ $($mod $m)$
+    \item Si $ax \equiv ay$ $($mod $m)$ y $(a,m) = 1 \Longrightarrow x \equiv y$  $($mod $m)$
+\end{itemize}
+
+
+\vspace{0.5cm}
+
+$9\hspace{-0.05cm}\cdot\hspace{-0.05cm}\text{-}$ Teorema de Fermat: Sea $p$ primo y $n \in \mathbb{N} \Longrightarrow n^p \equiv n$ $($mod $p)$
+
+\hspace{0.7cm}Pequeño teorema de Fermat:
+
+\hspace{0.9cm} Sea $p$ primo, $a \in \mathbb{Z}_+$; $p \nmid a \Longrightarrow a^{p-1} \equiv 1$ $($mod $p)$
+
+\vspace{0.5cm}
+
+\hspace{0.7cm}Teorema de Euler: Sean $a,m \in \mathbb{N}$; $(a,m) = 1 \Longrightarrow a^{\phi(m)} \equiv 1$ $($mod $m)$ donde $\phi(m)$ es el indicador y nos da la cantidad de \# primos con $m$, no mayores que él tal que $\phi(p) = p-1$ siendo $p$ primo.
+
+\vspace{0.5cm}
+
+\vspace{1cm}
+
+11, 12, 13, ..., pueden ser sugerencias de los amigos lectores.
