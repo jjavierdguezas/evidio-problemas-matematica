@@ -8,7 +8,7 @@ Colección de ejercicios publicados por el profesor [Evidio Quintana](https://ww
 - Intentar transcribir las colecciones de puño y letra a algún formato digital
 - Servir de tributo al profesor Evidio, genial profesor, para que su trabajo quede para la posteridad
 - Servir de entrenamiento a todos los estudiantes y a quién lo desee, para entrenarse o entretenerse con matemática
-- Crear un [website](evidiolecciones.github.io) con el libro como otra forma de compartirlo (ver [evidiolecciones/evidiolecciones.github.io](https://github.com/evidiolecciones/evidiolecciones.github.io))
+- Crear un [website](https://evidiolecciones.github.io) con el libro como otra forma de compartirlo (ver [evidiolecciones/evidiolecciones.github.io](https://github.com/evidiolecciones/evidiolecciones.github.io))
 
 ## Contribuciones
 
