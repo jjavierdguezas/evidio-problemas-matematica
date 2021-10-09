@@ -1,6 +1,12 @@
 \documentclass[11pt]{report}
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+\newpagestyle{mystyle}
+{\sethead[\thepage][][\chaptertitle]{}{}{\thepage}}
+\pagestyle{mystyle}
+\setcounter{secnumdepth}{0}
+
 \usepackage[spanish]{babel}
 \decimalpoint
 \usepackage[utf8]{inputenc}
@@ -43,12 +49,18 @@
 % \newcommand{\tarc}{\mbox{\large$\frown$}}
 % \newcommand{\arc}[1]{\stackrel{\tarc}{#1}}
 
+\addto\captionsspanish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Índice}%
+}
 
-\title{Lecciones de Matemática}
+
+\title{50 Lecciones de Matemática}
 \author{Evidio Quintana}
 \date{Day Month Year}
 
 \begin{document}
+
 \pagenumbering{roman} 
 
 \input{titlepage}
@@ -83,12 +95,9 @@
 % \input{chapters/introduction}
 
 
-\chapter{Lecciones}
+\chapter*{50 Lecciones de Matemática}
+\addcontentsline{toc}{chapter}{50 Lecciones de Matemática}
 \pagenumbering{arabic} 
 \input{lecciones}
-
-\chapter{Otros}
-\pagenumbering{arabic} 
-\input{otros}
 
 \end{document}
